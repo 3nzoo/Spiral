@@ -78,7 +78,6 @@ function draw(){
 //5. Input Manager
 document.addEventListener('keydown', (event) => {
     var keyName = event.key;
-    console.log(keyName);
     keyName = keyName.toUpperCase();
     if(keyName == 'ARROWLEFT' || keyName == 'A' ){    
         left = true; 
@@ -96,8 +95,9 @@ document.addEventListener('keydown', (event) => {
         // moveRight();
     }else if(keyName == 'ARROWDOWN' || keyName == 'S'){
         // moveRight();
-    }else if(keyName == ' '|| keyName =='enter'){
+    }else if(keyName == ' '|| keyName =='ENTER'){
         character.tweenStart = true
+        
     }
 });
 
